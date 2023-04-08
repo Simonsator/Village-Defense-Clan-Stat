@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.clan.stats.strikepractice;
+package de.simonsator.partyandfriends.clan.stats.villagedefense;
 
 
 public class PlayerData {

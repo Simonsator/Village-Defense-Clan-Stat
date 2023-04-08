@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.clan.stats.strikepractice;
+package de.simonsator.partyandfriends.clan.stats.villagedefense;
 
 import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.utilities.Language;
@@ -17,7 +17,7 @@ public class SPMessages extends LanguageConfiguration {
 	}
 
 	private void loadDefaultValues() {
-		set("ClanStats.StatName", "StrikePractice");
+		set("ClanStats.StatName", "Village Defense");
 		set("ClanStats.KD", "&7The average K/D of the clan is &a[KD]&7.");
 		set("ClanStats.Kills", "&7The people of the clan have killed &a[KILLS] &7people.");
 		set("ClanStats.Deaths", "&7The people of the clan have died &a[DEATHS]&7 times.");

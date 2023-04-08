@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.clan.stats.strikepractice;
+package de.simonsator.partyandfriends.clan.stats.villagedefense;
 
 
 import de.simonsator.partyandfriends.api.PAFExtension;
@@ -19,7 +19,7 @@ public class SPConfig extends ConfigurationCreator {
 	private void loadDefaultValues() {
 		set("database.host", "localhost");
 		set("database.port", 3306);
-		set("database.db", "duels");
+		set("database.db", "villager");
 		set("database.user", "root");
 		set("database.password", "Password");
 		set("database.ssl", false);

@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.clan.stats.strikepractice;
+package de.simonsator.partyandfriends.clan.stats.villagedefense;
 
 
 import de.simonsator.partyandfriends.communication.sql.SQLCommunication;
@@ -22,8 +22,8 @@ public class SPConnection extends SQLCommunication {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
-			rs = (stmt = con.createStatement()).executeQuery("select Deaths, Kills from `" + this.DATABASE +
-					"`.stats WHERE uuid='" + pUUID.toString() + "' LIMIT 1");
+			rs = (stmt = con.createStatement()).executeQuery("select kills, deaths from `" + this.DATABASE +
+					"`.villager WHERE UUID='" + pUUID.toString() + "' LIMIT 1");
 			if (rs.next()) {
 				return new PlayerData(rs.getInt("deaths"), rs.getInt("kills"));
 			}
